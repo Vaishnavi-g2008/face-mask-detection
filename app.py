@@ -12,7 +12,7 @@ if "open_camera" not in st.session_state:
     st.session_state.open_camera = False
 
 # ------------------ Load Model ------------------
-model = load_model("mask_final.keras")
+model = load_model("mask_final_quant.tflite")
 
 # ------------------ Prediction Function ------------------
 def predict_mask(img):
